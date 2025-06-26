@@ -29,7 +29,7 @@ function Main2() {
             };
 
             axios
-              .post('http://localhost:8080/api/vehicles', newLocation)
+              .post('http://localhost:8080/api/vehicles/save', newLocation)
               .then(() => setVehicle(newLocation))
               .catch((err) => console.error(err));
           },

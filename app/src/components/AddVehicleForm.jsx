@@ -19,7 +19,7 @@ function AddVehicleForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/vehicles', vehicle);
+      await axios.post('http://localhost:8080/api/vehicles/save', vehicle);
       alert('Vehicle location saved!');
       setVehicle({ vehicleId: '', latitude: '', longitude: '' }); // reset form
     } catch (error) {
